@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  color: inherit;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.company-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.logo-text {
+  font-family: Futura;
+  font-size: 12px;
+}
+
+.header-list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-links {
+  text-decoration: none;
+}
