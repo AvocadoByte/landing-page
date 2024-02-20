@@ -31,3 +31,106 @@ a {
 .header-links {
   text-decoration: none;
 }
+
+.hero-header {
+  display: flex;
+  justify-content: center; /* or space-around, space-evenly */
+  align-items: center; /* This will center the items vertically */
+  margin: auto;
+  padding: 10px 90px;
+}
+
+.hero-header-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin-right: 50px;
+}
+
+.hero-button {
+  width: 120px;
+}
+
+.hero-image {
+  width: 300px;
+  height: auto;
+}
+
+.thumbnail-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.thumbnail {
+  flex: 1 1 calc(50% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+}
+
+.thumbnail {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.thumbnail-text {
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.qoute-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 60px 0 60px;
+}
+
+.qouter:nth-child(2) {
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .hero-header {
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+  }
+
+  .hero-header-left,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+}
+
+.thumbnail {
+  flex-basis: calc(50% - 20px);
+}
+
+@media (max-width: 480px) {
+  .thumbnail {
+    flex-basis: 100%;
+  }
+}
